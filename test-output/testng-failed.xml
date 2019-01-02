@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite for agent panel]" parallel="tests">
+  <test thread-count="5" name="Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Script.ActivityDownloads">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="beforemethod"/>
+          <include name="Test12"/>
+        </methods>
+      </class> <!-- Script.ActivityDownloads -->
+      <class name="Script.AddArticle">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="test"/>
+          <include name="beforemethod"/>
+        </methods>
+      </class> <!-- Script.AddArticle -->
+      <class name="Script.addarticletemplates">
+        <methods>
+          <include name="test"/>
+          <include name="aftermethod"/>
+          <include name="beforemethod"/>
+        </methods>
+      </class> <!-- Script.addarticletemplates -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite for agent panel] -->

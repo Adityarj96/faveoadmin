@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite for agent panel" parallel="tests">
+	<test thread-count="2" name="Test" parallel="tests">
+		<parameter name="browser" value="chrome"></parameter>
+        <classes>
+			<class name="Script.ActivityDownloads" />
+			<class name="Script.AddArticle" />
+			<class name="Script.addarticletemplates"/>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
